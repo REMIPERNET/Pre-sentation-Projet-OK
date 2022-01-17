@@ -1,0 +1,196 @@
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+/* CSS NAV BAR */
+header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2.5rem;
+}
+
+.logo {
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+.site-nav {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+ul:hover li:not(:hover) a {
+  opacity: 0.2;
+}
+ul li {
+  position: relative;
+  padding: 30px 25px 30px 25px;
+  cursor: pointer;
+}
+ul li::after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #ffffff;
+  transform: scaleX(0);
+  transition: 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+ul li:hover::after, ul li.active::after {
+  transform: scaleX(1);
+}
+ul li a {
+  position: relative;
+  display: flex;
+  color: white;
+  font-family: Lato, sans-serif;
+  text-decoration: none;
+  transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+/* FIN CSS NAV BAR */
+
+/* CSS BODY */
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+#intro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+#resume{
+  /* border: solid 1px black; */
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+
+}
+.bumper {
+  height: 20vh;
+  padding: 60px 150px;
+  background-color: #efefef;
+}
+
+
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.space-holder {
+  position: relative;
+  width: 100%;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.horizontal {
+  position: absolute;
+  height: 100%;
+  will-change: transform;
+}
+
+.cards {
+  position: relative;
+  height: 100%;
+  padding: 0 0 0 150px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sample-card {
+  position: relative;
+  height: 700px;
+  width: 900px;
+  background-color: #e6e7e9;
+  margin-right: 100px;
+  flex-shrink: 0;
+}
+/*CONTENUS DES CARDS*/
+
+.wrapper {
+  height: 660px;
+  width: 850px;
+  margin: 20px;
+  /* VIA CSS MATIC https://goo.gl/cIbnS */
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+}
+
+.product-img {
+  float: top;
+  height: 500px;
+  width: auto;
+}
+
+
+.product-info {
+  float: bottom;
+  height: 160px;
+  width: 850px;
+  background-color: #ffffff;
+  border-top: solid 1px rgb(221, 221, 221);
+}
+
+.product-text {
+  height: 150px;
+  width: 650px;
+}
+
+.product-text h1 {
+  margin: 0 0 0 38px;
+  padding-top: 30px;
+  padding-bottom: 7px;
+  font-size: 20px;
+  color: #474747;
+}
+
+.product-text h2 {
+  margin: 0 0 10px 38px;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #acacac;
+  letter-spacing: 0.2em;
+}
+
+.product-text p {
+  flex-direction: row;
+  height: auto;
+  margin: 0 0 0 38px;
+  color: #8d8d8d;
+  line-height: 1.7em;
+  font-size: 15px;
+  font-weight: lighter;
+  overflow: hidden;
+}
+/* FIN CSS BODY */
