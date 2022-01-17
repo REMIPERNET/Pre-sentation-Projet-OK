@@ -71,19 +71,23 @@ body {
   margin: 0;
   font-family: sans-serif;
 }
+
 #intro{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 80vh;
 }
+
 #resume{
+
   /* border: solid 1px black; */
   -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
 
 }
+
 .bumper {
   height: 20vh;
   padding: 60px 150px;
@@ -104,7 +108,7 @@ body {
 
 .sticky {
   position: sticky;
-  top: 0;
+  top: 0vh;
   height: 100vh;
   width: 100%;
   overflow-x: hidden;
@@ -119,7 +123,7 @@ body {
 .cards {
   position: relative;
   height: 100%;
-  padding: 0 0 0 150px;
+  padding: 0 0 0 250px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
@@ -128,18 +132,18 @@ body {
 
 .sample-card {
   position: relative;
-  height: 700px;
-  width: 900px;
+  height: 80vh;
+  width: 65vw;
   background-color: #e6e7e9;
-  margin-right: 100px;
+  margin-right: 250px;
   flex-shrink: 0;
 }
 /*CONTENUS DES CARDS*/
 
 .wrapper {
-  height: 660px;
-  width: 850px;
-  margin: 20px;
+  /* height: 80vh; */
+  /* width: 65vw; */
+  /* margin: 20px; */
   /* VIA CSS MATIC https://goo.gl/cIbnS */
   -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
@@ -147,39 +151,44 @@ body {
 }
 
 .product-img {
-  float: top;
-  height: 500px;
-  width: auto;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.product-img img{
+  width: 100%;
+  height: auto;
 }
 
 
 .product-info {
-  float: bottom;
-  height: 160px;
-  width: 850px;
+  width: 100%;
   background-color: #ffffff;
   border-top: solid 1px rgb(221, 221, 221);
+  display: flex;
+  justify-content: center;
 }
 
 .product-text {
-  height: 150px;
-  width: 650px;
+  /* height: 150px; */
+  width: 80%;
 }
 
 .product-text h1 {
   margin: 0 0 0 38px;
-  padding-top: 30px;
-  padding-bottom: 7px;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
   font-size: 20px;
-  color: #474747;
+  color: #4d4c4c;
 }
 
 .product-text h2 {
   margin: 0 0 10px 38px;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #acacac;
+  color: #5f5f5f;
   letter-spacing: 0.2em;
 }
 
@@ -187,10 +196,11 @@ body {
   flex-direction: row;
   height: auto;
   margin: 0 0 0 38px;
-  color: #8d8d8d;
+  padding-bottom: 1.5rem;
+  color: #363636;
   line-height: 1.7em;
   font-size: 15px;
   font-weight: lighter;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 /* FIN CSS BODY */

@@ -9,7 +9,7 @@ function calcDynamicHeight(ref) {
   const vw = window.innerWidth;
   const vh = window.innerHeight;
   const objectWidth = ref.scrollWidth;
-  return objectWidth - vw + vh + 150; // 150 est le padding (en pixels) desiré sur la droite de la .cards container.
+  return objectWidth - vw + vh + 100; // 100 est le padding (en pixels) desiré sur la droite de la .cards container.
 }
 
 window.addEventListener('scroll', () => {
