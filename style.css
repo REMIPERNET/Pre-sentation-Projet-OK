@@ -181,6 +181,19 @@ body {
   height: auto;
 }
 
+#video_desktop{
+  max-width: 100%;
+  width: 1200px;
+  height: 585px;
+  max-height: auto;
+}
+#video_mobile{
+  /* max-width: 100%;
+  width: 1200px; */
+  height: 585px;
+  max-height: auto;
+  background-color: black;
+}
 
 .product-info {
   width: 100%;
