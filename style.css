@@ -147,7 +147,7 @@ body {
   position: relative;
   height: 80vh;
   width: 65vw;
-  background-color: #e6e7e9;
+  /* background-color: #e6e7e9; */
   margin-right: 250px;
   flex-shrink: 0;
 }
